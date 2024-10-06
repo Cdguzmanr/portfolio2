@@ -2,6 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts Import */
+@font-face {
+  font-family: rubic-regular;
+  src: url(../fonts/Rubik-Regular.ttf);
+}
+
+.rubic-regular{
+  font-family: rubic-regular;
+}
+
+@font-face {
+  font-family: rubic-bold;
+  src: url(../fonts/Rubik-Bold.ttf);
+}
+
+.rubic-bold{
+  font-family: rubic-bold;
+}
+
+/* Hero Water Texture */
+.water{
+  background-image: url(../../public/water2.png);
+}
+
+/* Hero Wave */
+.wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../../public/wave.png);
+  background-size: 1000px 100px;
+}
+.wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 10;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+.wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 9;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+.wave.wave3{
+  animation: animate 30s linear infinite;
+  z-index: 8;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15;
+}
+.wave.wave4{
+  animation: animate2 5s linear infinite;
+  z-index: 7;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+
+
+
 /* Skills Section */
 
 @keyframes fadeIn {

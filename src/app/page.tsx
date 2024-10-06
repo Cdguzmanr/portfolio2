@@ -4,6 +4,7 @@ import MainBanner from "@/components/MainBanner"
 import Profile from "@/components/Profile";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
     <main>
       <Navbar/>
 
-      <MainBanner />
+      <Hero/>
+      {/* <MainBanner /> */}
       
       <Profile/>
 

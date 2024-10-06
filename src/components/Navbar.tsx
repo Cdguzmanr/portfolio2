@@ -13,27 +13,44 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="sticky -mt-16 top-0 z-50 py-3 backdrop-blur-lg border-0 border-b-white border-neutral-700/80">
+        // Alternative Properties: sticky -mt-16 top-0 z-50 py-3 shadow-lg backdrop-blur-lg border-0 border-b-white border-neutral-700/80
+        <nav className="sticky -mt-16 top-0 bottom-0 z-50 py-3 backdrop-blur-lg bg-white opacity-85 border-0">
             <div className="container px-4 mx-auto relative text-sm">
-                <div className="flex justify-between items-center">
+                <div className="flex lg:mx-14 mt-2 justify-between items-center align-middle">
+
                     {/* Logo + Name */}
                     <div className="flex items-center flex-shrink-0">
-                        <img className='h-10 w-10 mr-2' src="/c-logo-b.png" alt='logo' />
-                        <span className='text-xl text-white tracking-tight'></span>
+                        {/* <img className='h-10 w-10 mr-2' src="/c-logo-b.png" alt='logo' /> */}
+                        <span className='text-2xl rubic-bold text-[#29527A] tracking-tight'>Carlos Guzman</span>
                     </div>
 
                     {/* Menu */}
-                    <ul className='hidden lg:flex ml-14 space-x-12 text-white text-base font'>
+
+                    <ul className='hidden lg:flex ml-14 space-x-12 text-gray-600 text-base rubic-regular'>
                         {navItems.map((item, index) => 
-                            <li key={index}>
-                                <a href={item.href}>{item.label}</a>
+                            <li key={index} className='relative group'>
+                                <a href={item.href} className='hover:text-black hover:font-bold relative'>
+                                    {item.label}
+                                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out"></span>
+                                </a>
                             </li>
                         )}
                     </ul>
 
+
+                    {/* <ul className='hidden lg:flex ml-14 space-x-12 text-gray-600 text-base rubic-regular'>
+                        {navItems.map((item, index) => 
+                            <li key={index} className=' hover:text-black selection:text-blue-600'>
+                                <a href={item.href}>{item.label}</a>
+                            </li>
+                        )}
+                    </ul> */}
+
+
+
                     {/* Sandwich Menu */}
                     <div className="lg:hidden md:flex flex-col justify-end">
-                        <button onClick={toggleNavbar} className="text-white">
+                        <button onClick={toggleNavbar} className="text-black">
                             {mobileDrawerOpen ? <X /> : <Menu />}
                         </button>
                     </div>

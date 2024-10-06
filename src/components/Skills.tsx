@@ -79,7 +79,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center text-white">
               {skillGroup.logos.map((Logo, logoIndex) => (
                 <div key={logoIndex} className="flex flex-col items-center">
-                  <Logo size="4rem" className="transition transform hover:scale-125 hover:text-indigo-500"/>
+                  <Logo size="4rem" className="transition transform hover:scale-125 hover:text-white"/>
                 </div>
               ))}
             </div>

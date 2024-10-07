@@ -8,7 +8,7 @@ const Hero = () => {
       
       <section className="flex flex-col items-center justify-center h-screen text-center">
         <h1 className="text-6xl lg:text-8xl font-bold text-gray-900 mb-4">Pura Vida!</h1>
-        <p className="text-lg lg:text-xl text-gray-600 mb-8">
+        <p className="text-base lg:text-xl text-gray-600 mb-8">
           🌴 My name is Carlos and I'm a Software Developer <br />
           currently working at Fox Valley Technical College 🧑🏻‍💻
         </p>

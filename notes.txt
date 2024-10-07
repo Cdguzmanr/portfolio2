@@ -16,5 +16,5 @@ Devicons (developer platforms): npm install --save devicons-react
 ** General Notes ** 
 Terminal command to test proyect: npm run dev  
 shortcut to create new react .tsx file: rafce + tab
-
+Push to github: (1) git add . | (2) git commit -m "message" | (3) git push 
 

@@ -31,30 +31,6 @@ export const navItems = [
 //     image: user2,
 //     text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
 //   },
-//   {
-//     user: "David Johnson",
-//     company: "Quantum Innovations",
-//     image: user3,
-//     text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
-//   },
-//   {
-//     user: "Ronee Brown",
-//     company: "Fusion Dynamics",
-//     image: user4,
-//     text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
-//   },
-//   {
-//     user: "Michael Wilson",
-//     company: "Visionary Creations",
-//     image: user5,
-//     text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
-//   },
-//   {
-//     user: "Emily Davis",
-//     company: "Synergy Systems",
-//     image: user6,
-//     text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
-//   },
 // ];
 
 export const features = [
@@ -174,4 +150,66 @@ export const communityLinks = [
   { href: "#", text: "Conferences" },
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
+];
+
+
+
+
+
+
+
+// -------------------------------------------------- test
+import {
+  RxCrop,
+  RxDesktop,
+  RxPencil2,
+  RxReader,
+  RxRocket,
+  RxAccessibility,
+} from "react-icons/rx";
+
+import SpaceCity1 from "../../../public/c-logo-b.png";
+import SpaceCity5 from "../../../public/c-logo-b.png";
+import SpaceCity6 from "../../../public/c-logo-b.png";
+import SpaceCity7 from "../../../public/c-logo-b.png";
+import SpaceCity8 from "../../../public/c-logo-b.png";
+import SpaceCity9 from "../../../public/c-logo-b.png";
+
+export const ServiceData = [
+  {
+    icon: RxCrop,
+    title: "Development",
+    content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity9,
+  },
+  {
+    icon: RxPencil2,
+    title: "Branding",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity1,
+  },
+  {
+    icon: RxDesktop,
+    title: "Design",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity6,
+  },
+  {
+    icon: RxReader,
+    title: "Seo",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity7,
+  },
+  {
+    icon: RxAccessibility,
+    title: "Management",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity5,
+  },
+  {
+    icon: RxRocket,
+    title: "Production",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity8,
+  },
 ];

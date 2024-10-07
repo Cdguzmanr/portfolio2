@@ -5,6 +5,8 @@ import Profile from "@/components/Profile";
 import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import ProjectsSection from "@/components/ProjectsSection";
+import ActiveSlider from "@/components/ActiveSlider";
 
 export default function Home() {
   return (
@@ -18,6 +20,9 @@ export default function Home() {
       <Profile/>
 
       <Skills/>
+
+      {/* <ProjectsSection/> */}
+
 
       <Footer/>
     </main>

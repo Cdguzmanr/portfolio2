@@ -21,8 +21,7 @@ export default function Home() {
 
       <Skills/>
 
-      {/* <ProjectsSection/> */}
-
+      <ProjectsSection/>
 
       <Footer/>
     </main>

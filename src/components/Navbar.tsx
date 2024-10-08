@@ -14,8 +14,10 @@ const Navbar = () => {
 
     return (
         // Alternative Properties: sticky -mt-16 top-0 z-50 py-3 shadow-lg backdrop-blur-lg border-0 border-b-white border-neutral-700/80
-        <nav className="sticky -mt-16 top-0 bottom-0 z-50 py-3 backdrop-blur-lg bg-white opacity-85 border-0">
+        <nav className="sticky -mt-16 top-0 bottom-0 z-50 py-3 backdrop-blur-lg bg-white  border-0 opacity-95">
             <div className="container px-4 mx-auto relative text-sm">
+
+                {/* Desktop Container */}
                 <div className="flex lg:mx-14 mt-2 justify-between items-center align-middle">
 
                     {/* Logo + Name */}
@@ -58,27 +60,16 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {mobileDrawerOpen && (
-                    <div className="fixed right-0 z-20 bg-[#2D2928] w-full p-12 flex flex-col justify-center items-center lg:hidden text-white">
+                    <div className="fixed right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden rubic-regular text-white bg-gradient-to-b from-white to-[#29527A] to-5% shadow-xl text-center transition-transform transform-gpu scale-100 opacity-100">
                         <ul>
                             {navItems.map((item, index) => (
                                 <li key={index} className="py-4">
-                                <a href={item.href}>{item.label}</a>
+                                    <a href={item.href} className='bg-[#7691AA] w-10 text-white font-bold py-2 px-6 rounded-full transition-transform duration-300 transform hover:bg-[#547595] hover:scale-105'>
+                                        {item.label}
+                                    </a>
                                 </li>
                             ))}
                         </ul>
-
-                        {/* Optional for now */}
-                        <div className="flex space-x-6">
-                            <a href="#" className="py-2 px-3 border rounded-md">
-                                Sign In
-                            </a>
-                            <a
-                                href="#"
-                                className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
-                            >
-                                Create an account
-                            </a>
-                        </div>
                     </div>
                 )}
             </div>

@@ -6,7 +6,7 @@ import { Project } from './IProject';
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className="py-16 bg-[#E0EBF5] text-center">
+    <section className="py-16 bg-[#49B5D4] bg-[url('/skyOceanBoat.svg')] bg-cover text-center">
       <h2 className="text-4xl font-bold text-gray-900 mb-8">My Projects</h2>
 
 
@@ -19,6 +19,7 @@ const ProjectsSection: React.FC = () => {
             title={project.title}
             image={project.image}
             category={project.category}
+            summary={project.summary}
             description={project.description}
             link={project.link}
           />

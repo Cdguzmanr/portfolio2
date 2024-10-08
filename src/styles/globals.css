@@ -21,11 +21,6 @@
   font-family: rubic-bold;
 }
 
-/* Hero Water Texture */
-.water{
-  background-image: url(../../public/water2.png);
-}
-
 /* Hero Wave */
 .wave{
   position: absolute;
@@ -33,7 +28,7 @@
   left: 0;
   width: 100%;
   height: 100px;
-  background: url(../../public/wave.png);
+  background: url(/wave.png);
   background-size: 1000px 100px;
 }
 .wave.wave1{
@@ -145,8 +140,9 @@
   top: -90px;  
   }
 
-/* Skills Section */
+/* Skills Section Animations */
 
+/* General fadeIn animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -156,36 +152,39 @@
   }
 }
 
+/* Fade in from the left */
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-20px); /* Slide in from the left */
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0); /* Stop at the original position */
   }
 }
-
+/* Fade in from the right */
 @keyframes fadeInRight {
   from {
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(20px); /* Slide in from the right */
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0); /* Stop at the original position */
   }
 }
-
+/* Fade in animation */
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-out forwards;
 }
-
+/* Fade in from the left */
 .animate-fadeInLeft {
   animation: fadeInLeft 0.5s ease-out forwards;
 }
-
+/* Fade in from the right */
 .animate-fadeInRight {
   animation: fadeInRight 0.5s ease-out forwards;
 }
+
+/* Projects Section */

@@ -6,6 +6,7 @@ export interface Project {
     category: string;
     summary: string,
     description: string;
+    video: string;
     link: string;
   }
   

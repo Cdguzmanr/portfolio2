@@ -69,7 +69,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-sky-300 to-[#44B2D3] text-white py-20 md:py-10 px-5 md:px-20">
+    <section id='Skills' className="bg-gradient-to-b from-sky-300 to-[#44B2D3] text-white py-20 md:py-10 px-5 md:px-20">
       <h2 className="text-3xl font-bold text-center mb-10">Skills</h2>
 
       {/* Cards Component */}

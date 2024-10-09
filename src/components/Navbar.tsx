@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         // Alternative Properties: sticky -mt-16 top-0 z-50 py-3 shadow-lg backdrop-blur-lg border-0 border-b-white border-neutral-700/80
-        <nav className="sticky -mt-16 top-0 bottom-0 z-50 py-3 backdrop-blur-lg bg-white  border-0 opacity-95">
+        <nav id='Navbar' className="sticky -mt-16 top-0 bottom-0 z-50 py-3 backdrop-blur-lg bg-white  border-0 opacity-95">
             <div className="container px-4 mx-auto relative text-sm">
 
                 {/* Desktop Container */}
@@ -26,8 +26,7 @@ const Navbar = () => {
                         <span className='text-2xl rubic-bold text-[#29527A] tracking-tight'>Carlos Guzman</span>
                     </div>
 
-                    {/* Menu */}
-
+                    {/* Menu items Right */}
                     <ul className='hidden lg:flex ml-14 space-x-12 text-gray-600 text-base rubic-regular'>
                         {navItems.map((item, index) => 
                             <li key={index} className='relative group'>
@@ -40,6 +39,7 @@ const Navbar = () => {
                     </ul>
 
 
+                    {/* Menu items centered */}
                     {/* <ul className='hidden lg:flex ml-14 space-x-12 text-gray-600 text-base rubic-regular'>
                         {navItems.map((item, index) => 
                             <li key={index} className=' hover:text-black selection:text-blue-600'>
@@ -47,7 +47,6 @@ const Navbar = () => {
                             </li>
                         )}
                     </ul> */}
-
 
 
                     {/* Sandwich Menu */}

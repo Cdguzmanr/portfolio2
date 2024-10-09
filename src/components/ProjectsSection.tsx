@@ -3,10 +3,11 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import { projectsData } from './constants/projectsData'; 
 import { Project } from './IProject'; 
+import { Video } from 'lucide-react';
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className="py-16 bg-[#49B5D4] bg-[url('/skyOceanBoat.svg')] bg-cover text-center">
+    <section id='Projects' className="py-16 bg-[#49B5D4] bg-[url('/skyOceanBoat.svg')] bg-cover text-center">
       <h2 className="text-4xl font-bold text-gray-900 mb-8">My Projects</h2>
 
 
@@ -21,6 +22,7 @@ const ProjectsSection: React.FC = () => {
             category={project.category}
             summary={project.summary}
             description={project.description}
+            video={project.video}
             link={project.link}
           />
         ))}

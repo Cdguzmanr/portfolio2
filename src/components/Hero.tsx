@@ -3,7 +3,7 @@ import waterTexture from '../../public/water.png' // Adjust the path if necessar
 
 const Hero = () => {
   return (
-    <div className="relative bg-[#D1E1F0] bg-[url('/water2.png')] bg-cover bg-blend-overlay">
+    <div id='Hero' className="relative bg-[#D1E1F0] bg-[url('/water2.png')] bg-cover bg-blend-overlay">
       {/* Background now includes water texture and blue color */}
       
       <section className="flex flex-col items-center justify-center h-screen text-center">

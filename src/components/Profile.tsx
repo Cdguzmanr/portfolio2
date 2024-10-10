@@ -25,7 +25,7 @@ const Profile = () => {
     </div>
 
     {/* Profile Card */}
-    <div id='Profile' className="relative lg:top-16 z-10 bg-gradient-to-b bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-sky-300 text-black flex flex-col items-center justify-center p-6 md:flex-row md:items-start md:p-20 shadow-2xl rounded-xl md:my-20 mx-4 md:mx-10 py-10   md:py-20 rubic-regular">
+    <div id='Profile' className="relative lg:top-16 z-10 bg-white bg-opacity-30 bg-clip-padding backdrop-filter backdrop-blur-sm border border-sky-300 text-black flex flex-col items-center justify-center p-6 md:flex-row md:items-start md:p-20 shadow-2xl rounded-xl md:my-20 mx-4 md:mx-10 py-10   md:py-20 rubic-regular">
       
       <div className="relative rounded-full w-32 h-32 md:w-80 md:h-80 overflow-hidden">
         <Image src="/profile-square.jpg" alt="profile picture" className='object-cover' fill />

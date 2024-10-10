@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         // Alternative Properties: sticky -mt-16 top-0 z-50 py-3 shadow-lg backdrop-blur-lg border-0 border-b-white border-neutral-700/80
-        <nav id='Navbar' className="sticky -mt-16 top-0 bottom-0 z-50 py-3 backdrop-blur-lg bg-white  border-0 opacity-95">
+        <nav id='Navbar' className="sticky -mt-16 top-0 bottom-0 z-50 py-3 backdrop-blur-lg bg-white  border-0 opacity-95 ">
             <div className="container px-4 mx-auto relative text-sm">
 
                 {/* Desktop Container */}
@@ -59,17 +59,18 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {mobileDrawerOpen && (
-                    <div className="fixed right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden rubic-regular text-white bg-gradient-to-b from-white to-[#29527A] to-5% shadow-xl text-center transition-transform transform-gpu scale-100 opacity-100">
-                        <ul>
-                            {navItems.map((item, index) => (
-                                <li key={index} className="py-4">
-                                    <a href={item.href} className='bg-[#7691AA] w-10 text-white font-bold py-2 px-6 rounded-full transition-transform duration-300 transform hover:bg-[#547595] hover:scale-105'>
-                                        {item.label}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    <div id='mobileNavbar' className="fixed right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden rubic-regular text-white bg-gradient-to-b from-white to-[#29527A] to-5% shadow-xl text-center transform transition-transform duration-500 ease-in-out">
+                    <ul>
+                        {navItems.map((item, index) => (
+                            <li key={index} className="py-4">
+                                <a href={item.href} className="bg-[#7691AA] text-white font-bold py-3 px-14 rounded-full transition-transform duration-300 transform hover:bg-[#547595] hover:scale-105 w-full text-center block">
+                                    {item.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                
                 )}
             </div>
         </nav>

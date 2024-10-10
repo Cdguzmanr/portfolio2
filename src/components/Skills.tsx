@@ -69,11 +69,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id='Skills' className="bg-gradient-to-b from-sky-300 to-[#44B2D3] text-white py-20 md:py-10 px-5 md:px-20">
-      <h2 className="text-3xl font-bold text-center mb-10">Skills</h2>
+    <section id='Skills' className="bg-gradient-to-b from-sky-300 to-[#44B2D3] py-20 md:py-10 px-5 md:px-20">
+      <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Skills</h2>
 
       {/* Cards Component */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-white">
         {skills.map((skillGroup, index) => (
           <div 
             key={index} 

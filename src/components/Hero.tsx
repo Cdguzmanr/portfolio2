@@ -12,7 +12,7 @@ const Hero = () => {
           🌴 My name is Carlos and I'm a Software Developer <br />
           currently working at Fox Valley Technical College 🧑🏻‍💻
         </p>
-        <a href="#contact" className="bg-[#2D2928] text-white py-2 px-4 rounded hover:bg-[#29527A] hover:scale-105">
+        <a href="#Contact" className="bg-[#2D2928] text-white py-2 px-4 rounded hover:bg-[#29527A] hover:scale-105">
           Contact Me
         </a>
       </section>

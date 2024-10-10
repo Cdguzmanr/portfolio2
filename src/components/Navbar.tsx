@@ -48,7 +48,7 @@ const Navbar = () => {
                         )}
                     </ul> */}
 
-
+                        
                     {/* Sandwich Menu */}
                     <div className="lg:hidden md:flex flex-col justify-end">
                         <button onClick={toggleNavbar} className="text-black">
@@ -59,7 +59,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {mobileDrawerOpen && (
-                    <div id='mobileNavbar' className="fixed right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden rubic-regular text-white bg-gradient-to-b from-white to-[#29527A] to-5% shadow-xl text-center transform transition-transform duration-500 ease-in-out">
+                    <div className="fixed right-0 z-20 w-full p-12 flex flex-col justify-center items-center lg:hidden rubic-regular text-white bg-gradient-to-b from-white to-[#29527A] to-5% shadow-xl text-center scale-100 opacity-100 transform transition-transform duration-500 ease-in-out">
                     <ul>
                         {navItems.map((item, index) => (
                             <li key={index} className="py-4">

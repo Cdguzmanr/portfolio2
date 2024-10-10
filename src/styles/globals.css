@@ -16,7 +16,7 @@
 }
 
 /* Slide down animation for mobile navbar */
-@keyframes slideDown {
+/* @keyframes slideDown {
   0% {
     transform: translateY(-100%);
     opacity: 0;
@@ -48,10 +48,10 @@
   animation: slideDown 0.5s ease-in-out forwards;
 }
 
-/* Close state */
+/* Close state 
 #mobileNavbar.close {
   animation: slideUp 0.5s ease-in-out forwards;
-}
+} */
 
 
 /* Fonts Import */
